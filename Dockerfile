@@ -1,6 +1,6 @@
 FROM python:2.7.15-stretch
 
-RUN pip install ipaddress repoze.lru dnslib ipaddr cryptography
+RUN pip install ipaddress repoze.lru dnslib ipaddr cryptography builtins
 RUN git clone https://github.com/v3aqb/fwlite.git --depth=1
 
 VOLUME /data
