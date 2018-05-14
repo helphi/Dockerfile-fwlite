@@ -10,3 +10,5 @@ RUN echo 'if [ -f "/data/userconf.ini" ]; then cp /data/userconf.ini fwlite/; fi
     echo 'python2.7 fwlite/fgfw-lite/fgfw-lite.py' >> start.sh
 
 CMD ["sh", "start.sh"]
+
+EXPOSE 8118
